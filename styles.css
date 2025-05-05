@@ -1,0 +1,130 @@
+/* General styles */
+body {
+  background-color: #333;
+  color: #f1f1f1;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.subtitle {
+  color: #ccc;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.content {
+  background-color:#333;
+  color: white;
+  padding: 20px; /* Optional: Adds some padding for readability */
+}
+h2 {
+  border-bottom: 2px solid rgb(130, 130, 130); /* Adds a black line under the header */
+  padding-bottom: 10px; /* Adds some space between the text and the line */
+  margin-bottom: 20px; /* Adds space after the line */
+}
+
+.github-link {
+  color: #ff4823;
+  font-size: 1.2em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.github-link i {
+  margin-right: 8px;
+  font-size: 1.5em;
+}
+#contact p {
+  display: flex;
+  gap: 20px; /* Adds space between the links */
+}
+
+#contact a {
+  color: #e3593e; /* Inherits color from parent or allows specific color if set */
+  text-decoration: none;
+  font-size: 1.1em; /* Adjust the size if needed */
+  display: flex;
+  align-items: center;
+}
+
+#contact i {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+#contact a:hover {
+  color:  #fb866f; /* Changes color on hover for visual feedback */
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #747373;
+  overflow: hidden;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.nav-menu li a:hover {
+  background-color: #555;
+}
+
+/* Dropdown styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #7a7777;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
